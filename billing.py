@@ -92,7 +92,7 @@ def find_weight():
                
 def post(label,price,final_rate,taken):
     global id
-    url = "https://selfcheckout.onrender.com/product"
+    url = "https://automaticbilling.herokuapp.com/product"
     headers = CaseInsensitiveDict()
     headers["Content-Type"] = "application/json"
     data_dict = {"id":id_product,"name":label,"price":price,"units":"units","taken":taken,"payable":final_rate}
