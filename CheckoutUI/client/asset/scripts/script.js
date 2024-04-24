@@ -10,7 +10,7 @@ const deleteProducts = async() => {
     const products = responseText;
 
     for (let product of products) {
-        const response = await axios.delete(`https://sagarai.onrender.com/product${product.id}`)
+        const response = await axios.delete(`https://sagarai.onrender.com/product/${product.id}`)
 
     }
     location.reload();
